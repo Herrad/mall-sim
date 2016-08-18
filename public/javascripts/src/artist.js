@@ -33,10 +33,16 @@ function createArtist(canvas) {
             ctx.clearRect(0, 0, canvas.width, canvas.height)
         },
         debug: function(text) {
-            const textSpecs = ctx.measureText(text);
             ctx.fillStyle = 'black'
-            ctx.font = "24px sans-serif";
+            ctx.font = '24px sans-serif';
+            const textSpecs = ctx.measureText(text);
             ctx.fillText(text, defaults.dimensions.width - 10 - textSpecs.width, 20)
+        },
+        text: function(text, position, font) {
+            ctx.fillStyle = 'black'
+            ctx.font = font || '24px sans-serif';
+            const textSpecs = ctx.measureText(text);
+            ctx.fillText(text, position.x - textSpecs.width-cameraPosition.x, position.y-cameraPosition.y)
         }
     }
 }
