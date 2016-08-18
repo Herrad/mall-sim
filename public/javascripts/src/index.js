@@ -10,6 +10,11 @@ const artist = createArtist(canvas);
 
 const world = createWorld(artist);
 createShopper(world);
+createShopper(world, {x: 1000, y: 80}, 'red');
+createShopper(world, {x: 80, y: 80}, 'blue');
+createShopper(world, {x: 180, y: 80}, 'darkblue');
+createShopper(world, {x: 123, y: 580}, 'yellow');
+createShopper(world, {x: 80, y: 5234}, 'pink');
 
 let now = Date.now();
 let prev = now;
