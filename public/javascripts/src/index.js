@@ -1,19 +1,10 @@
 const canvas = document.getElementById('canvas');
 
-const guy = {
-    coordinates: {x: 10, y: 510},
-    dimensions: {width: 30, height: 70},
-    colour: 'green',
-    act: function(timePassed, leave) {
-        this.coordinates.x += timePassed/4;
-        if(this.coordinates.x > 600) leave(this);
-    }
-};
 
 const artist = createArtist(canvas);
 
 const world = createWorld(artist);
-world.enter(guy);
+createShopper(world);
 
 let now = Date.now();
 let prev = now;
