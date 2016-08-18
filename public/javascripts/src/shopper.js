@@ -1,4 +1,12 @@
 function createShopper(world) {
+    function moveToPath() {
+
+    }
+
+    function findNewPath() {
+        
+    }
+
     const guy = {
         coordinates: {x: 10, y: 510},
         dimensions: {width: 30, height: 70},

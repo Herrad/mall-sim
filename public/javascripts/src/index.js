@@ -1,5 +1,10 @@
 const canvas = document.getElementById('canvas');
-
+function sizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+window.onresize = sizeCanvas;
+sizeCanvas();
 
 const artist = createArtist(canvas);
 
