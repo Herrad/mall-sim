@@ -31,7 +31,7 @@ function createWorld(artist) {
             guys.splice(i, 1);
         },
         nextPath: function(location) {
-            const near = nearestExc(points, {coordinates: location}, 200)
+            const near = nearestOutsideRadius(points, {coordinates: location}, 200)
             console.log('path is', near.coordinates);
             return near;
         }
