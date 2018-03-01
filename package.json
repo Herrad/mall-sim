@@ -1,0 +1,25 @@
+{
+  "name": "mall-sim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herrad/mall-sim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herrad/mall-sim/issues"
+  },
+  "homepage": "https://github.com/Herrad/mall-sim#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "http": "0.0.0",
+    "serve-favicon": "^2.4.5"
+  }
+}
